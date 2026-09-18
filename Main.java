@@ -34,14 +34,13 @@ public class Main{
 	System.out.println(livro1.genero);	
 	}
 	public static void TesteTelevisao(){
-		int[] dimensoes = {20,60};
-		Televisao televisao1 = new Televisao("Sansung",dimensoes,true,2);
+		Televisao televisao1 = new Televisao("Sansung","20x60",true,2);
 		televisao1.Sintonizar(420);
 		televisao1.Ligar();
 		televisao1.Sintonizar(420);
 		System.out.println(televisao1.quantidadePortasHDMI);	
 
-		Televisao televisao2 = new Televisao("Sansung",dimensoes,true,2);
+		Televisao televisao2 = new Televisao("Sansung","20x60",true,2);
 		televisao2.Sintonizar(67);
 		televisao2.Ligar();
 		televisao2.Sintonizar(67);

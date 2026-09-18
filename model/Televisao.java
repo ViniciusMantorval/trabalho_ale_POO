@@ -1,11 +1,12 @@
+package model;
 public class Televisao{
 	public String marca;
-	public int[] dimensoes;
+	public String dimensoes;
 	public boolean isSmart;
 	public int quantidadePortasHDMI;
 	boolean ligado= false;
 
-	public Televisao(String marca,int[] dimensoes,boolean isSmart, int quantidadePortasHDMI){
+	public Televisao(String marca,String dimensoes,boolean isSmart, int quantidadePortasHDMI){
 		this.marca = marca;
 		this.dimensoes = dimensoes;
 		this.quantidadePortasHDMI = quantidadePortasHDMI;
