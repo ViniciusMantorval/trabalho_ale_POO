@@ -19,6 +19,13 @@ public class Main{
 		TesteMochila();
 		System.out.println();
 		TesteGarrafa();
+		System.out.println();	
+		TesteTelevisao();
+		System.out.println();	
+		TesteFogao();
+		System.out.println();	
+		TesteGeladeira();
+		System.out.println();
 	}
 
 	public static void TesteCaneta(){
@@ -121,14 +128,52 @@ public class Main{
 		System.out.println(mochila2.getObjetos());
 	}
 	public static void TesteGarrafa() {
-		Garrafa garrafa1 = new Garrafa("Azul",true,1,0);
-		Garrafa garrafa2 = new Garrafa("Roxo",false,1,0);
+		Garrafa garrafa1 = new Garrafa("Azul", true, 1, 0);
+		Garrafa garrafa2 = new Garrafa("Roxo", false, 1, 0);
 		garrafa1.encher();
 		garrafa2.encher();
 		garrafa2.abrir();
 		garrafa2.encher();
 
-		System.out.println(garrafa1.getEstaAberta());;
+		System.out.println(garrafa1.getEstaAberta());
+		;
 		System.out.println(garrafa2.getEstaAberta());
+	}
+	public static void TesteTelevisao(){
+		Televisao televisao1 = new Televisao("Sansung","20x60",true,2);
+		televisao1.Sintonizar(420);
+		televisao1.Ligar();
+		televisao1.Sintonizar(420);
+		System.out.println(televisao1.quantidadePortasHDMI);	
+
+		Televisao televisao2 = new Televisao("Sansung","20x60",true,2);
+		televisao2.Sintonizar(67);
+		televisao2.Ligar();
+		televisao2.Sintonizar(67);
+		System.out.println(televisao2.quantidadePortasHDMI);	
+	}
+	public static void TesteFogao(){
+		Fogao fogao1 = new Fogao("Eletrolux","100x100x100",5,"indução");
+		fogao1.Ligar();
+		fogao1.Desligar();
+		System.out.println(fogao1.tipo);
+
+		Fogao fogao2 = new Fogao("Braztemp","100x100x100",4,"à gas");
+		fogao2.Ligar();
+		fogao2.Desligar();
+		System.out.println(fogao2.tipo);
+	}
+	public static void TesteGeladeira(){
+		Geladeira geladeira1 = new Geladeira("Eletrolux",1);
+		geladeira1.Abrir();
+		geladeira1.Abrir();
+		geladeira1.Fechar();
+		geladeira1.Fechar();
+
+		Geladeira geladeira2 = new Geladeira("Braztemp",2);
+		geladeira2.Abrir();
+		geladeira2.Abrir();
+		geladeira2.Fechar();
+		geladeira2.Fechar();
 	}
 }
