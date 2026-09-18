@@ -11,6 +11,18 @@ public class Relogio {
         this.possuiAlarme = possuiAlarme;
         this.tipo = tipo;
         this.cor = cor;
+
+        if (hora > 23.59)
+            hora = 0;
+        if (hora < 0)
+            hora = 23.3;
+
+        int inteiro = (int) hora;
+        double minutos = hora - inteiro;
+
+        if (minutos >= .6)
+            this.hora = inteiro+1;
+
     }
 
     public void mostrarHora() {
