@@ -104,12 +104,13 @@ public class Main{
 	}
 	public static void TesteRelogio() {
 		Relogio relogio1 = new Relogio(23,false,"Parede","Branco");
-		Relogio relogio2 = new Relogio(0.6,true,"Parede","Branco");
+		Relogio relogio2 = new Relogio(0,true,"Parede","Branco");
 
 		relogio1.mostrarHora();
 		relogio2.mostrarHora();
 		relogio1.removerAlarme();
 		relogio2.adicionarAlarme();
+
 		relogio1.adiantar();
 		relogio2.atrasar();
 		relogio1.mostrarHora();

@@ -1,27 +1,21 @@
 package model;
 
 public class Relogio {
-    double hora;
+    int hora;
     boolean possuiAlarme;
     String tipo;
     String cor;
 
-    public Relogio(double hora, boolean possuiAlarme,String tipo, String cor) {
+    public Relogio(int hora, boolean possuiAlarme,String tipo, String cor) {
         this.hora = hora;
         this.possuiAlarme = possuiAlarme;
         this.tipo = tipo;
         this.cor = cor;
 
-        if (hora > 23.59)
+        if (hora > 23)
             hora = 0;
         if (hora < 0)
-            hora = 23.3;
-
-        int inteiro = (int) hora;
-        double minutos = hora - inteiro;
-
-        if (minutos >= .6)
-            this.hora = inteiro+1;
+            hora = 23;
 
     }
 
@@ -31,27 +25,15 @@ public class Relogio {
     }
 
     public void adiantar() {
-        hora += .3;
-        int inteiro = (int) hora;
-        double minutos = hora - inteiro;
-
-        if (minutos >= .6)
-            hora = inteiro+1;
-
+        hora += 1;
         if (hora >= 24)
             hora = 0;
     }
 
     public void atrasar() {
-        hora -= .3;
-        int inteiro = (int) hora;
-        double minutos = hora - inteiro;
-
-        if (minutos >= .6)
-            hora = inteiro+.3;
-
+        hora -= 1;
         if (hora <= 0)
-            hora = 23.3;
+            hora = 23;
     }
 
     public void adicionarAlarme() {
