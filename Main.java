@@ -12,6 +12,7 @@ public class Main{
 		System.out.println();	
 		TesteGeladeira();
 		System.out.println();	
+		TesteVentilador();
 	}
 
 	public static void TesteCaneta(){
@@ -26,16 +27,16 @@ public class Main{
 	}
 	public static void TesteLivro(){
 		Livro livro1 =new Livro("Memórias postumas de Bras Cubas","Romance","Machado de Assis","06/07/1980");
-	livro1.Ler();	
-	livro1.Abrir();	
-	livro1.Ler();	
-	System.out.println(livro1.genero);	
+		livro1.Ler();	
+		livro1.Abrir();	
+		livro1.Ler();	
+		System.out.println(livro1.genero);	
 
-		Livro livro2 =new Livro("Harry Potter e o Calice da Morte","fantasia","J.K. Rolling","12/09/1999");
-	livro2.Ler();	
-	livro2.Abrir();	
-	livro2.Ler();	
-	System.out.println(livro1.genero);	
+			Livro livro2 =new Livro("Harry Potter e o Calice da Morte","fantasia","J.K. Rolling","12/09/1999");
+		livro2.Ler();	
+		livro2.Abrir();	
+		livro2.Ler();	
+		System.out.println(livro1.genero);	
 	}
 	public static void TesteTelevisao(){
 		Televisao televisao1 = new Televisao("Sansung","20x60",true,2);
@@ -73,5 +74,12 @@ public class Main{
 		geladeira2.Abrir();
 		geladeira2.Fechar();
 		geladeira2.Fechar();
+	}
+	
+	public static void TesteVentilador(){
+		Ventilador ventilador1 = new Ventilador("Eletrolux","20x60",4,"preto");	
+		ventilador1.VentilarFixo();
+		ventilador1.VentilarMexendo();
+		System.out.println(ventilador1.cor);	
 	}
 }
