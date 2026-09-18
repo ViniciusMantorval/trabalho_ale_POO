@@ -8,6 +8,8 @@ public class Main{
 		System.out.println();	
 		TesteTelevisao();
 		System.out.println();	
+		TesteFogao();
+		System.out.println();	
 	}
 
 	public static void TesteCaneta(){
@@ -45,5 +47,16 @@ public class Main{
 		televisao2.Ligar();
 		televisao2.Sintonizar(67);
 		System.out.println(televisao2.quantidadePortasHDMI);	
+	}
+	public static void TesteFogao(){
+		Fogao fogao1 = new Fogao("Eletrolux","100x100x100",5,"indução");
+		fogao1.Ligar();
+		fogao1.Desligar();
+		System.out.println(fogao1.tipo);
+
+		Fogao fogao2 = new Fogao("Braztemp","100x100x100",4,"à gas");
+		fogao2.Ligar();
+		fogao2.Desligar();
+		System.out.println(fogao2.tipo);
 	}
 }
