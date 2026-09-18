@@ -13,6 +13,14 @@ public class Mesa {
         this.quantidade_pernas = quantidade_pernas;
         this.objetos = objetos;
         this.capacidade = capacidade;
+
+        if (objetos > capacidade)
+            this.objetos = 0;
+        if (objetos < 0)
+            this.objetos = 0;
+        if (capacidade < 0)
+            this.capacidade = 0;
+
     }
 
     public void porObjeto() {

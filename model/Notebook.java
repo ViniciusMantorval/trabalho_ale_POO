@@ -61,6 +61,6 @@ public class Notebook {
         System.out.println("Notebook fechado!");
     }
 
-    public boolean getLigado() {return ligado;}
+    public boolean getAberto() {return estaAberto;}
 
 }

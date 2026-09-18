@@ -7,8 +7,18 @@ public class Garrafa {
     int capacidade = 0;
     int quantidade = 0;
 
-    public Garrafa() {
+    public Garrafa(String cor, boolean estaAberta,int capacidade, int quantidade) {
+        this.cor = cor;
+        this.estaAberta = estaAberta;
+        this.capacidade = capacidade;
+        this.quantidade = quantidade;
 
+        if (quantidade > capacidade)
+            this.quantidade = 0;
+        if (quantidade < 0)
+            this.quantidade = 0;
+        if (capacidade < 0)
+            this.capacidade = 0;
     }
 
     public void encher() {

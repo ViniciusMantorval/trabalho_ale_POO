@@ -61,5 +61,5 @@ public class Celular {
         System.out.println("Chip removido com sucesso!");
     }
 
-    public boolean getLigado() {return ligado;}
+    public boolean getChip() {return possuiChip;}
 }
