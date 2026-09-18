@@ -10,6 +10,8 @@ public class Main{
 		System.out.println();	
 		TesteFogao();
 		System.out.println();	
+		TesteGeladeira();
+		System.out.println();	
 	}
 
 	public static void TesteCaneta(){
@@ -58,5 +60,18 @@ public class Main{
 		fogao2.Ligar();
 		fogao2.Desligar();
 		System.out.println(fogao2.tipo);
+	}
+	public static void TesteGeladeira(){
+		Geladeira geladeira1 = new Geladeira("Eletrolux",1);
+		geladeira1.Abrir();
+		geladeira1.Abrir();
+		geladeira1.Fechar();
+		geladeira1.Fechar();
+
+		Geladeira geladeira2 = new Geladeira("Braztemp",2);
+		geladeira2.Abrir();
+		geladeira2.Abrir();
+		geladeira2.Fechar();
+		geladeira2.Fechar();
 	}
 }
