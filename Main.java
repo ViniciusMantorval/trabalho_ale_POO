@@ -13,6 +13,9 @@ public class Main{
 		TesteGeladeira();
 		System.out.println();	
 		TesteVentilador();
+		System.out.println();	
+		TesteBicicleta();
+		System.out.println();	
 	}
 
 	public static void TesteCaneta(){
@@ -81,5 +84,16 @@ public class Main{
 		ventilador1.VentilarFixo();
 		ventilador1.VentilarMexendo();
 		System.out.println(ventilador1.cor);	
+	}
+	public static void TesteBicicleta(){
+		Bicicleta bicicleta1 = new Bicicleta("Americanas", "preto", 10, 7);
+		bicicleta1.pedalar();
+		bicicleta1.trocarMarcha(2);
+		System.out.println(bicicleta1.cor);
+
+		Bicicleta bicicleta2 = new Bicicleta("Casas Baiha", "rosa", 20, 89);
+		bicicleta2.pedalar();
+		bicicleta2.trocarMarcha(2);
+		System.out.println(bicicleta2.cor);
 	}
 }
